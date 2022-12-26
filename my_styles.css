@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Lobster&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+img#section-photo{
+    width: 45vh;
+    object-fit: contain;
+    border-radius: 1%;
+    padding: 1%;
+    max-width: 1000px;
+
+}
+
+
+
+p{
+    max-width: 1200px;
+    font-size: 1.3rem;
+    align-self: center;
+    margin-top: 1%;
+
+}
+
+.read-more{
+    font-size: 1.2rem;
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration:underline;
+}
+
+h2, h3, h4, h5{
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+    padding: 2%;
+    margin-bottom: 1%;
+    
+    color: darkblue;
+    
+}
+
+.icon{
+    width: 50px;
+    
+}
+
+.wnn{
+    width: 100px;
+    height: 50;
+    object-fit: contain;
+}
+
+.wag-logo{
+    display:inline-block;
+    width:70px;
+    margin-right: auto;
+}
+
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    white-space: nowrap;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+h1{
+    color: #edf0f1;
+    white-space: nowrap;
+    font-size: 2.7rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Cormorant Garamond', serif;
+
+}
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 8%;
+    background-color: #111c55;
+}
+
+header#head2{
+    display: flex;
+    align-items: center;
+    background-color:#030615;
+    align-self: stretch;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh);
+    background-color: #030615  ;
+    
+}
+
+div#main{
+    align-self: center;
+    background-color: #edf0f1;
+
+}
+
+div#section-sports, div#section-pop, div#section-voices, div#section-events{
+    padding: 4%;
+    padding-left: 4%;
+    padding-right: 4%;
+    background-color: rgba(204, 204, 204, 0.473);
+    margin: 1%;
+}
+
+
+
+.nav-links li, a{
+    display: inline-block;
+    padding: 2px 20px;
+    white-space: nowrap;
+    align-self: center;
+}
+
+.nav-links li, a:hover{
+    color: #0088a9;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button :hover{
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+th{
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
+    white-space: nowrap;
+    align-self: center;
+    max-width: 650px;
+    object-fit: scale-down;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    background-color: #24252a;
+    padding-top: 2%;
+}
+
+td,th,tr,table{
+    max-width: 600px;
+}
