@@ -14,7 +14,8 @@
         <link rel="icon" href="images/favicon.ico">
 
         <script src = "manager.js"></script>
-
+        <noscript>Your browser does not support JavaScript!</noscript>
+            
     </head>
 
         <body>
@@ -29,7 +30,7 @@
             <div>
                 <header id="head2">
                     <nav class="nav-links">
-                        <p id="Genre">Article Genre</p>
+                        <p id="Genre">Genre</p>
                     </nav>
                 </header>
             </div>
@@ -38,10 +39,11 @@
             <div id="background">
                 <div id="foreground">
                     <div id="title">
-                        <h2>Article Title</h2>
+                        <h2>Title</h2>
                     </div>
+                    <script>changeTitles()</script>
 
-                    <div id="article-main"">
+                    <div id="article-main">
 
                     </div>
                 </div>
@@ -51,9 +53,9 @@
             <div>
                 <footer id="footer2">
                     <nav class="nav-links" id="footer2">
-                        <a href="#">&leftarrow;</a>
+                        <a href="#" onclick="lastArticle()">&leftarrow;</a>
                         <a href="index.html">Back to Home Page</a>
-                        <a href="#">&rightarrow;</a>
+                        <a href="#" onclick="nextArticle()">&rightarrow;</a>
                     </nav>
                 </footer>
                 <footer>
