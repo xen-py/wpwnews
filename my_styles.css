@@ -7,52 +7,52 @@
     padding: 0;
 }
 
-
-
-
-
 img#section-photo{
-    width: 45vh;
+    width: 600px;
     object-fit: contain;
     border-radius: 1%;
-    padding: 1%;
-    max-width: 1000px;
+    padding-bottom: 1%;
+    max-width: 90vw;
+    margin: auto;
 
 }
 
 
-
 p{
-    max-width: 1200px;
-    font-size: 1.3rem;
+    max-width: 600px;
+    font-size: 1.2rem;
     align-self: center;
     margin-top: 1%;
 
 }
 
-.read-more{
+.read-more, a{
+    max-width: 600px;
     font-size: 1.2rem;
+    padding: 0%;
     color: blue;
     font-family: 'Times New Roman', Times, serif;
     text-decoration:underline;
+    white-space: nowrap;
 }
 
 h2, h3, h4, h5{
+    max-width: 600px;
     font-size: 30px;
-    font-family: 'Lobster', cursive;
-    padding: 2%;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 2%;
+    padding-bottom: 2%;
     margin-bottom: 1%;
-    
     color: darkblue;
     
 }
 
-.icon{
+img#icon{
     width: 50px;
     
 }
 
-.wnn{
+img#wnn{
     width: 100px;
     height: 50;
     object-fit: contain;
@@ -83,7 +83,6 @@ h1{
 
 }
 
-
 header{
     display: flex;
     flex-direction: column;
@@ -99,26 +98,27 @@ header#head2{
     align-self: stretch;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    min-height: calc(100vh);
-    background-color: #030615  ;
-    
+
+
+div#section-sports, div#section-pop, div#section-voices, div#section-events{
+    width: 610px;
+    padding-top: 5%;
+    margin: auto;
+    background-color: white;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+}
+
+div#section-events{
+    padding-bottom: 5%;
 }
 
 div#main{
     align-self: center;
-    background-color: #edf0f1;
-
-}
-
-div#section-sports, div#section-pop, div#section-voices, div#section-events{
-    padding: 4%;
-    padding-left: 4%;
-    padding-right: 4%;
-    background-color: rgba(204, 204, 204, 0.473);
-    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -132,6 +132,14 @@ div#section-sports, div#section-pop, div#section-voices, div#section-events{
 
 .nav-links li, a:hover{
     color: #0088a9;
+}
+
+.socials li,a{
+    display: inline-block;
+    padding: 2px 30px;
+    white-space: nowrap;
+    align-self: center;
+    text-decoration: none;
 }
 
 button {
@@ -169,4 +177,10 @@ footer{
 
 td,th,tr,table{
     max-width: 600px;
+}
+
+/* if device has a touch screen */
+@media (any-pointer: coarse) or (hover: none) or (handheld){
+    html {zoom: 130%;} 
+    #my{ zoom: 130%; }
 }
