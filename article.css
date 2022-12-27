@@ -1,0 +1,27 @@
+
+div#content{
+    min-height: 70vh;
+    background-color: #ccc;
+}
+
+div#article-main{
+    align-self: center;
+    width: 90vw;
+    height: 70vh;
+    margin: auto;
+    background-color: white;
+}
+
+
+@media (any-pointer: coarse) or (hover: none) or (handheld){
+    div#article-main{
+        width: 100vw;
+    }
+}
+
+@supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */ 
+    div#article-main{
+        width: 100vw;
+    }
+  }
