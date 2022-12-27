@@ -190,3 +190,9 @@ td,th,tr,table{
     html {zoom: 130%;} 
     #my{ zoom: 130%; }
 }
+
+@supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */ 
+    html {zoom: 130%;} 
+    #my{ zoom: 130%; }
+  }
