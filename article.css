@@ -43,7 +43,7 @@ div#article-main{
 
 .socials li,a{
     display: inline-block;
-    padding: 2px 15px;
+    padding: 2px 25px;
     white-space: nowrap;
     align-self: center;
     text-decoration: none;
@@ -57,12 +57,14 @@ footer#footer2{
 
 
 @media (any-pointer: coarse) or (hover: none) or (handheld){
+    html {zoom: 100%;} 
+    #my{ zoom: 100%; }
     div#article-main{
         width: 100%;
         margin: 0%;
     }
     .socials li,a{
-        padding: 2px 8px;
+        padding: 2px 15px;
     }
     img#icon{
         width: 25px;
@@ -77,19 +79,22 @@ footer#footer2{
 
 @supports (-webkit-touch-callout: none) {
     /* CSS specific to iOS devices */ 
+    html {zoom: 100%;} 
+    #my{ zoom: 100%; }
+    
     div#article-main{
         width: 100%;
         margin: 0%;
     }
     .socials li,a{
-        padding: 2px 8px;
+        padding: 2px 15px;
     }
     img#icon{
-        width: 25px;
+        width: 35px;
     }
     
     img#wnn{
-        width: 50px;
+        width: 70px;
         height: 50;
         object-fit: contain;
     }
