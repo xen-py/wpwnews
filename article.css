@@ -4,9 +4,24 @@ div#background{
     background-color: white;
 }
 
+img#article-photo{
+    width: 600px;
+    object-fit: contain;
+    border-radius: 1%;
+    padding-bottom: 6%;
+    max-width: 90vw;
+    margin: auto;
+
+}
+
 h1{
     font-size: xx-large;
 }
+
+.spacer{
+    padding-top: 20%;
+}
+
 
 p#Genre{
     font-family: "Montserrat", sans-serif;
@@ -38,7 +53,8 @@ div#title{
 }
 
 div#article-main{
-    height: 100vh;
+    
+    padding-top: 5%;
 }
 
 .socials li,a{

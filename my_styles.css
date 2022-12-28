@@ -49,8 +49,7 @@ h2, h3, h4, h5{
     padding-top: 2%;
     padding-bottom: 2%;
     margin-bottom: 1%;
-    color: darkblue;
-    
+    color: darkblue;    
 }
 
 img#icon{
@@ -187,12 +186,18 @@ td,th,tr,table{
 
 /* if device has a touch screen */
 @media (any-pointer: coarse) or (hover: none) or (handheld){
-    html {zoom: 130%;} 
-    #my{ zoom: 130%; }
+    html {zoom: 140%;} 
+    #my{ zoom: 140%; }
+    .socials li,a{
+        padding: 2px 20px;
+    }
 }
 
 @supports (-webkit-touch-callout: none) {
     /* CSS specific to iOS devices */ 
-    html {zoom: 130%;} 
-    #my{ zoom: 130%; }
+    html {zoom: 140%;} 
+    #my{ zoom: 140%; }
+    .socials li,a{
+        padding: 2px 20px;
+    }
   }

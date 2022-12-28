@@ -1,12 +1,11 @@
 
-let reloaded = false
-
-function refresh(){
-    if (!reloaded){
-    location.reload()
-    }
-    
+let Editors = {
+    1 : "future editors",
+    2 : "Austin, Isabella, Ivn",
+    3 : "future editors",
+    4 : "future editors"
 }
+
 
 
 let url = window.location.href
@@ -17,6 +16,7 @@ function getArticleNumber() {
     article = url.substring(url.length-1)
     console.log(article)
 }
+
 
 getArticleNumber()
 
@@ -57,6 +57,11 @@ function changeTitles (){
             break;
     }
 
+    articleTitle.style.fontSize = '25px'
+    articleTitle.style.fontFamily = '"Montserrat", sans-serif'
+    articleTitle.style.color = '#1D71F5'
+
+
 }
 
 function nextArticle(){
@@ -76,7 +81,8 @@ function nextArticle(){
     //window.open(nextPage)
     //window.location.href = nextPage;
     window.location.assign(nextPage);
-    document.location.reload()
+    caches.keys().then(list => list.map(key => caches.delete(key)))
+    document.location.reload(true)
 }
 
 function lastArticle(){
@@ -94,11 +100,35 @@ function lastArticle(){
     //window.open(nextPage, '_self');
     //window.open(nextPage)
     //window.location.href = nextPage;
+    caches.keys().then(list => list.map(key => caches.delete(key)))
     window.location.assign(nextPage);
-    document.location.reload()
+    document.location.reload(true)
 }
 
+function content(){
 
+    switch(article){
+        case 1:
+            //image
+            document.writeln('<img id="article-photo" src="images/Badminton.png" alt="a picture">');
+            //main content
+            document.writeln('<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus officiis nemo explicabo recusandae earum ad distinctio aperiam voluptates saepe, nesciunt accusamus quasi ex nobis expedita ipsum doloribus ratione vel possimus?</p>')
+            document.writeln('<div class="spacer"></div>')
+            document.writeln("<p class = 'date' >Editors: "+Editors[1]+'</p>')
+            break;
+        case 2:
+            //image
+            document.writeln('<img id="article-photo" ALIGN="left" src="images/santa.jpg" alt="a picture">');
+            //main content
+            document.writeln('<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus officiis nemo explicabo recusandae earum ad distinctio aperiam voluptates saepe, nesciunt accusamus quasi ex nobis expedita ipsum doloribus ratione vel possimus?</p>')
+            document.writeln('<div class="spacer"></div>')
+            document.writeln("<p class = 'date' >Editors: "+Editors[2]+'</p>')
+            break;
+
+    }
+    document.write('')
+
+}
 
 
 
