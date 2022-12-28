@@ -8,12 +8,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
         <META HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:01 GMT">
-        <title>Document</title>
-        <link rel="stylesheet" href="my_styles.css?refreshcss=3" type="text/css">
-        <link rel="stylesheet" href="article.css?refreshcss=10" type="text/css">
-        <link rel="icon" href="images/favicon.ico">
 
-        <script src = "manager.js"></script>
+        <script>document.write</script>
+        <!--<script src = "manager.js"></script>-->
+        <script>document.write('<script src="manager.js?dev=' + Math.floor(Math.random() * 100) + '"\><\/script>');</script>
+
+
+        <link rel="stylesheet" href="my_styles.css?refreshcss=3" type="text/css">
+        <!--<link rel="stylesheet" href="article.css?refreshcss=10" type="text/css">  -->
+        <script>document.write('<link rel="stylesheet" href="article.css?dev=' + Math.floor(Math.random() * 100) + 'type="text/css">');</script>
+
+        <link rel="icon" href="images/favicon.ico">
+        <title id = 'title'></title>
+        
+
+       
         <noscript>Your browser does not support JavaScript!</noscript>
             
     </head>
@@ -30,7 +39,7 @@
             <div>
                 <header id="head2">
                     <nav class="nav-links">
-                        <p id="Genre">Genre</p>
+                        <p id="Genre">Please Enable JavaScript</p>
                     </nav>
                 </header>
             </div>
@@ -38,7 +47,7 @@
 
             <div id="background">
                 <div id="foreground">
-                    <div id="title">
+                    <div id="article-title">
                         <h2>Title</h2>
                     </div>
                     <script>changeTitles()</script>

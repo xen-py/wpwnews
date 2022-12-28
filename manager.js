@@ -28,27 +28,32 @@ function changeTitles (){
     * 3 = Student Voices
     * 4 = Current Events
     */
+    let title = document.getElementById('title') 
     let genre = document.getElementById('Genre')//document.querySelector('#Genre')
-    let title = document.getElementById('title')
+    let articleTitle = document.getElementById('article-title')
     article = parseInt(article)
     console.log(genre)
 
     switch(article){
         case 1:
+            title.textContent = 'Sports'
             genre.textContent = 'Sports'
-            title.textContent = 'To be replaced'
+            articleTitle.textContent = 'To be replaced'
             break;
         case 2:
+            title.textContent = 'Pop Culture'
             genre.textContent = 'Pop Culture'
-            title.textContent = 'Favourite holiday movies'
+            articleTitle.textContent = 'Favourite holiday movies'
             break;
         case 3:
+            title.textContent = 'Student Voices'
             genre.textContent = 'Student Voices'
-            title.textContent = 'to be replaced'
+            articleTitle.textContent = 'to be replaced'
             break
         case 4:
+            title.textContent = 'Current Events'
             genre.textContent = 'Current Events'
-            title.textContent = 'to be replaced'
+            articleTitle.textContent = 'to be replaced'
             break;
     }
 
