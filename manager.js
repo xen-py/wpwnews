@@ -119,7 +119,7 @@ function content(){
             break;
         case 2:
             //image
-            document.writeln('<img id="article-photo" ALIGN="left" src="images/santa.jpg" alt="a picture">');
+            document.writeln('<img id="article-photo" src="images/santa.jpg" alt="a picture">');
             //main content
             document.writeln('<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus officiis nemo explicabo recusandae earum ad distinctio aperiam voluptates saepe, nesciunt accusamus quasi ex nobis expedita ipsum doloribus ratione vel possimus?</p>')
             document.writeln('<div class="spacer"></div>')
@@ -129,6 +129,7 @@ function content(){
             document.writeln("<p class = 'date' >Editors: "+Editors[2]+'</p>')
             break;
         case 4:
+            document.writeln('<img id="article-photo" src="images/eventsArticle.jpg" alt="a picture of the current event">')
             document.writeln('<p>The 2022 World Cup was one for the ages. The World Cup began with some of the most bizarre matches, such as Argentina losing to Saudi Arabia and Japan defeating European giants Spain and Germany in blue lock kits. This year\'s World Cup had fans crying and cheering, and many supposedly "easy games" for some countries ended with the underdogs winning. The World Cup finals were one of, if not the, craziest matches in football history. Argentina had the lead 2-0 with Messi and Di Maria both scoring until the 80th minute when Kylian Mbappe scored a penalty, and then in the next minute, he scored another goal. During extra time, Messi was able to score one more goal, but shortly after Kylian Mbappe scored his third, making it a hat trick. It ended up being 3-3 and the game went to penalties. Argentina scored four times when France only scored twice, which finally closed the goat discussion. Messi is officially the Goat.</p>')
             document.writeln('<div class="spacer"></div>')
             document.writeln("<p class = 'date' >Editors: "+Editors[4]+'</p>')
