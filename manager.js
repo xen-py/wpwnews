@@ -2,7 +2,7 @@
 
 let editors =  {
     1 : "Eli",
-    2 : "Austin, Avni, Isabella, Shaneel",
+    2 : "Austin, Avni, Ysabella, Shaneel",
     3 : "future editors",
     4 : "Amon, Kai"
     }
@@ -74,7 +74,7 @@ function nextArticle(){
     //window.open(nextPage)
     //window.location.href = nextPage;
     window.location.assign(nextPage);
-    caches.keys().then(list => list.map(key => caches.delete(key)))
+    //caches.keys().then(list => list.map(key => caches.delete(key)))
     document.location.reload(true)
 }
 
@@ -93,7 +93,7 @@ function lastArticle(){
     //window.open(nextPage, '_self');
     //window.open(nextPage)
     //window.location.href = nextPage;
-    caches.keys().then(list => list.map(key => caches.delete(key)))
+    //caches.keys().then(list => list.map(key => caches.delete(key)))
     window.location.assign(nextPage);
     document.location.reload(true)
 }

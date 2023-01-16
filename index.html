@@ -12,14 +12,6 @@
        <title>WP Wagner News</title>
        <link rel="stylesheet" href="my_styles.css?refreshcss=14" type="text/css">
        <link rel="icon" href="images/favicon.ico">
-       <script>
-            function openArticle(nextPage){
-                //window.open(nextPage);
-                let url = window.location.href
-                let nextUrl = url.replace("index.html", nextPage)
-                window.location.replace(nextUrl)
-            }
-        </script>
        
    </head>
 
@@ -27,8 +19,26 @@
    <body>
 
         <div>
+            <script>function openAdmin(){
+                let url = window.location.href
+                let leftSlash = 0;
+                for (let i = 0; i < url.length; i++) {
+                    if(url[i] == "/"){
+                        leftSlash = i;
+                    }
+                    
+                }
+
+                url = url.slice(0, leftSlash+1)
+
+                adminPage = url + "admin/index.html"
+                window.location.assign(adminPage);
+                //document.location.reload(true)
+                }
+
+                </script>
             <header>
-                <h1>Wagner Press</h1>
+                <h1 ondblclick="openAdmin()" oncontextmenu="openAdmin()">Wagner Press</h1>
             </header>
         </div>
 
